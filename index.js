@@ -1,3 +1,3 @@
 exports.handler = function(event, context, callback) {
-  callback(null, 'HELLO WORLD!');
+  callback(null, 'HELLO WORLD! I think...');
 };
