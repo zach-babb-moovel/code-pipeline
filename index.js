@@ -1,3 +1,8 @@
 exports.handler = function(event, context, callback) {
-  callback(null, 'HELLO WORLD! I think...');
+  var response = {
+    statusCode: 200,
+    headers: {},
+    body: 'HELLO WORLD! Maybe...'
+  };
+  callback(null, response);
 };
