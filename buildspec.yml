@@ -5,7 +5,7 @@ phases:
       - npm install time
       - npm install -g mocha
       - npm install chai
-      - mocha test.js
+      - mocha test/unit/*
       - aws cloudformation package --template-file samTemplate.yaml --s3-bucket mv-code-pipeline 
                                    --output-template-file NewSamTemplate.yaml
 artifacts:
