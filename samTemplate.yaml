@@ -48,6 +48,6 @@ Resources:
         MyTimeApi:
           Type: Api
           Properties:
-            Path: /bar
+            Path: /bar/{baz}
             Method: POST
 
