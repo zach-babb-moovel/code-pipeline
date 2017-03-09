@@ -38,4 +38,16 @@ Resources:
           Properties:
             Path: /Foo/{bar}/baz
             Method: GET
+  BarFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: bar.handler
+      Runtime: nodejs4.3
+      CodeUri: ./
+      Events:
+        MyTimeApi:
+          Type: Api
+          Properties:
+            Path: /bar
+            Method: POST
 
